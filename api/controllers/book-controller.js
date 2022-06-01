@@ -101,11 +101,11 @@ class BookController {
          * After deleting the book, send back status 204.
          */
         const book = model.getBook(parseInt(req.params.id));
-        if (book) {
+        if (book!=null) {
             model.deleteBook(parseInt(req.params.id));
             res.status(204).send(`Book deleted.`);
         } else {
-            res.status(204).send(`Book not deleted.`);
+            res.send(`Book not deleted.`);
         }
     }
 }
