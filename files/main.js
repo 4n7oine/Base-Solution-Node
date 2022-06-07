@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     renderCategorie();
 
-    fetchBooks('html5')
+    //fetchBooks('html5')
 
 });
 

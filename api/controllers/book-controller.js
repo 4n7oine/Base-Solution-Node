@@ -84,12 +84,10 @@ class BookController {
             console.log("Update in");
             model.updateBook(parseInt(req.params.id), req.body);
             const newBook = model.getBook(parseInt(req.params.id));
-            res.status(200);
+            res.send();
         } else {
             res.status(200).send(`Book updated.`);
         }
-
-
 
     }
 

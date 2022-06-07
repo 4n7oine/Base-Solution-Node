@@ -18,7 +18,7 @@ routes.post('/categories/:category/books', controller.createBook);
    endpoint: /books/:id
  */
 
-routes.patch('/books/:id', controller.updateBook);
+routes.put('/books/:id', controller.updateBook);
 
 
 /* --- Task 4 --- Add a route to delete a book
